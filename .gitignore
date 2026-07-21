@@ -1,4 +1,19 @@
+# macOS
 .DS_Store
+
+# Python
 __pycache__/
 *.py[cod]
+
+# Virtual environment
+.venv/
+
+# Environment variables
+.env
+
+# Editors
 .vscode/
+.idea/
+
+# Jupyter
+*.ipynb
