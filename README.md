@@ -4,7 +4,7 @@ An interactive web app built with Python and Streamlit that generates passwords 
 
 ## Project Structure
 
-```text
+```text id="c5x2a8"
 .
 ├── README.md
 ├── requirements.txt
@@ -21,15 +21,15 @@ An interactive web app built with Python and Streamlit that generates passwords 
 
 ## Password Types
 
-| Generator | Description |
-|---|---|
-| `PinGeneratorPassword` | Numeric PIN of a chosen length |
-| `RandomPasswordGenerator` | Random letters, with optional numbers and symbols |
+| Generator                    | Description                                                                         |
+| ---------------------------- | ----------------------------------------------------------------------------------- |
+| `PinGeneratorPassword`       | Numeric PIN of a chosen length                                                      |
+| `RandomPasswordGenerator`    | Random letters, with optional numbers and symbols                                   |
 | `MemorablePasswordGenerator` | Several dictionary words joined by a separator, with optional random capitalization |
 
 Example:
 
-```python
+```python id="7q8z2m"
 from src.password_generator import RandomPasswordGenerator
 
 generator = RandomPasswordGenerator(
@@ -43,7 +43,7 @@ print(generator.generator())
 
 ## Installation
 
-```bash
+```bash id="x3d9ma"
 git clone https://github.com/mahnazghssm/Password-Generator.git
 cd Password-Generator
 pip install -r requirements.txt
@@ -55,7 +55,7 @@ The NLTK words corpus is downloaded automatically the first time you run the pro
 
 Run the dashboard:
 
-```bash
+```bash id="z5s1kq"
 streamlit run src/dashboard.py
 ```
 
@@ -63,6 +63,10 @@ This opens the app in your browser on localhost.
 
 To try the generators in the terminal:
 
-```bash
+```bash id="p4c6vn"
 python src/password_generator.py
 ```
+
+## License
+
+This project is licensed under the MIT License.
